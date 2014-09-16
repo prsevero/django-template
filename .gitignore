@@ -1,0 +1,21 @@
+/bin/
+/build/
+/include/
+/lib/
+/man/
+/share/
+.Python
+*.pyc
+*.db
+*~
+*.swp
+*.sqlite3
+
+/static/
+/media/
+
+# Settings local
+settings_local.py
+
+# Grunt
+/node_modules/

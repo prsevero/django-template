@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title> • {% block 'title' %}{% endblock %}</title>
+        <meta name="description" lang="pt" content="{% block 'description' %}{% endblock %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="">
+        <meta name="copyright" content="">
+        <meta name="robots" content="noodp" />
+
+        {% if not DEBUG %}
+        <!-- Analytics -->
+        {% endif %}
+
+        {% comment %}
+        <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon" type="image/ico" />
+        {% endcomment %}
+        <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+
+        {% comment %}
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:site_name" content="">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="website">
+        <meta property="og:image:width" content="800">
+        <meta property="og:image:height" content="600">
+        {% endcomment %}
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                
+            </nav>
+        </header>
+
+        {% block 'content' %}{% endblock %}
+
+        <footer>
+            
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/base.js" async></script>
+        {% block 'scripts' %}{% endblock %}
+
+        {% if DEBUG %}
+        <script src="//localhost:35729/livereload.js"></script>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,22 @@
+/*
+ * General
+*/
+.valign {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 1px;
+}
+
+.notr {
+    -webkit-transition: 0s !important;
+       -moz-transition: 0s !important;
+        -ms-transition: 0s !important;
+         -o-transition: 0s !important;
+            transition: 0s !important;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
